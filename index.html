@@ -1,0 +1,82 @@
+
+Solution for Build a Survey Form
+Close
+×
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please take a moment to fill out this short survey.</p>
+    
+    <form id="survey-form">
+        <!-- Name Field -->
+        <div>
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div>
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Number Field -->
+        <div>
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+        </div>
+
+        <!-- Dropdown Field -->
+        <div>
+            <label for="dropdown">Which programming languages do you know?</label>
+            <select id="dropdown" name="languages">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Preferred contact method:</label>
+            <input type="radio" id="email-radio" name="contact" value="email">
+            <label for="email-radio">Email</label>
+            <input type="radio" id="phone-radio" name="contact" value="phone">
+            <label for="phone-radio">Phone</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Which of these topics are you interested in?</label>
+            <input type="checkbox" id="frontend" name="topics" value="Frontend">
+            <label for="frontend">Frontend Development</label>
+
+            <input type="checkbox" id="backend" name="topics" value="Backend">
+            <label for="backend">Backend Development</label>
+
+            <input type="checkbox" id="data-science" name="topics" value="Data Science">
+            <label for="data-science">Data Science</label>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
